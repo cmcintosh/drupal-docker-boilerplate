@@ -6,6 +6,7 @@ docroot/sites/*/settings*.php
 
 # User Generated Content #
 ##########################
+scripts/pass.txt
 docroot/files
 docroot/sites/*/files
 docroot/sites/*/private

@@ -8,6 +8,9 @@ mysql:
   env_file: ./docker/mysql/.env
   volumes_from:
     - mysqldata
+  environment:
+   - MYSQL_ROOT_PASSWORD=root
+   - MYSQL_DATABASE=meetingpackage
 web:
   build: ./docker/web
   ports:
