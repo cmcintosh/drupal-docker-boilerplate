@@ -8,6 +8,14 @@ mysql:
   env_file: ./docker/mysql/.env
   volumes_from:
     - mysqldata
+  environment:
+    - MYSQL_ROOT_PASSWORD=root
+    - MYSQL_DATABASE=drupal
+mailcatcher:
+    image: schickling/mailcatcher
+    ports:
+      - "1081:1080"
+      - "1025:1025"
 web:
   build: ./docker/web
   ports:
@@ -19,3 +27,4 @@ web:
    - ./volumes/xdebug_profiler:/root/xdebug_profiler
   links:
    - mysql:mysql
+   - mailcatcher
