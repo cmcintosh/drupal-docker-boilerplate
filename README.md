@@ -15,12 +15,15 @@ to know more please check the README inside the specific directory.
 * [.gitignore](https://github.com/Lullabot/drupal-docker-boilerplate/blob/master/.gitignore)
  * Contains the a list of the most common excluded files.
 * [docker-compose.yml](https://github.com/Lullabot/drupal-docker-boilerplate/blob/master/docker-compose.yml)
- * 
+ *
 * [Makefile](https://github.com/Lullabot/drupal-docker-boilerplate/blob/master/Makefile)
  *
 * [patches.make](http://github.com/Lullabot/drupal-docker-boilerplate/bloh/master/Makefile)
  * This is the file used by Drush Patchfile to manage patches to modules and core. Install it Drush Patchfile into ```drush/commands```
- 
+ *
+ [mailcatcher](https://mailcatcher.me/)
+ * Provided with this repo is mailcatcher, this can be used with the Drupal SMTP module for email testing.  SMTP port is 1025, and web port is 1081.
+ *
 ## Docker Setup
 
 - Install [Docker](https://www.docker.com/products/docker). For Mac, make sure you are on the beta channel.
